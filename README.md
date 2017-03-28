@@ -25,6 +25,15 @@ if #available(iOS 10.3, *) {
 ```
 This will result in the Store Kit review UI for iOS versions 10.3+. Bellow iOS 10.3 an alert will be displayed which will take a user to the app store or open up the ticket creation UI from ZendeskSDK.
 
+## Running the example
+
+The example uses [Cocoapods](https://cocoapods.org/) to install ZendeskSDK. 
+Run the following to get started:
+```
+$ pod install
+```
+Then build and run the example project.
+
 ## Contributions
 Pull requests are welcome.
  
