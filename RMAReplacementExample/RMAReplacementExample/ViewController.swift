@@ -7,18 +7,18 @@
 //
 
 import UIKit
+import StoreKit
 
 class ViewController: UIViewController {
 
     @IBAction func rateApp() {
         
         if #available(iOS 10.3, *) {
-            // use apple rate app
+            SKStoreReviewController.requestReview()
         } else {
             let rma = RMAReplacement(appVersion: "1.0.1")
             rma.displayRMA(with: self)
         }
     }
-
 }
 
