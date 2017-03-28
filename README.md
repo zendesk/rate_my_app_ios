@@ -1,2 +1,32 @@
-# rate_my_app_ios
-An open source version of the Rate My App feature from 1.x versions of the Support SDK.
+:warning: *Use of this software is subject to important terms and conditions as set forth in the License file* :warning:
+
+# Zendesk Sample Apps for iOS
+
+## Description
+This repository provides you with an open-source alternative to the "Rate My App" feature of versions
+1.x of the Zendesk Support SDK for iOS. It is a simple example with no integration with or 
+dependency on the Zendesk platform.    
+ 
+## Owners
+If you have any questions please email support@zendesk.com.
+ 
+## Getting Started
+To include the RateMyApp library in your app, add `RMAReplacement.*` Swift or Objective-C 
+
+Then, in a view controller add:
+
+```swift
+if #available(iOS 10.3, *) {
+    SKStoreReviewController.requestReview()
+} else {
+    let rma = RMAReplacement(appVersion: "1.0.1")
+    rma.displayRMA(with: self)
+}
+```
+
+## Contributions
+Pull requests are welcome.
+ 
+## Bugs
+Please submit bug reports to [Zendesk](https://support.zendesk.com/requests/new).
+ 
