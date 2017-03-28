@@ -11,7 +11,7 @@ dependency on the Zendesk platform.
 If you have any questions please email support@zendesk.com.
  
 ## Getting Started
-To include the RateMyApp library in your app, add `RMAReplacement.*` Swift or Objective-C 
+To include this replacement for ZendeskSDK RateMyApp in your app, add `RMAReplacement` (`.swift` or `.h .m`).  
 
 Then, in a view controller add:
 
@@ -23,6 +23,7 @@ if #available(iOS 10.3, *) {
     rma.displayRMA(with: self)
 }
 ```
+This will result in the Store Kit review UI for iOS versions 10.3+. Bellow iOS 10.3 an alert will be displayed which will take a user to the app store or open up the ticket creation UI from ZendeskSDK.
 
 ## Contributions
 Pull requests are welcome.
